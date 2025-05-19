@@ -29,7 +29,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white px-4 py-4 space-y-2 shadow-lg">
+        <div className="md:hidden bg-white px-4 py-4 mt-0 space-y-2 shadow-lg">
           <Link href="#fitur" onClick={() => setIsOpen(false)} className="block text-gray-700">Fitur</Link>
           <Link href="#tentang" onClick={() => setIsOpen(false)} className="block text-gray-700">Tentang</Link>
           <Link href="#kontak" onClick={() => setIsOpen(false)} className="block text-gray-700">Kontak</Link>

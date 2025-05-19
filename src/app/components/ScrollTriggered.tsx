@@ -18,19 +18,19 @@ export default function ScrollTriggered() {
 
 
 function Card({ emoji, title,head, hueA, hueB, i }: CardProps) {
-  const background = `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`
+  const background = `  linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`
 
   return (
     <motion.div
-      className={`card-container-${i}`}
+      className={`card-container-${i} `}
       style={cardContainer}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ amount: 0.8 }}
     >
       <div style={{ ...splash, background }} />
-      <motion.div style={card} variants={cardVariants} className="card">
-        <div className="flex flex-col items-center justify-center">
+      <motion.div style={card} variants={cardVariants} className="card    border-20 border-solid border-indigo-600 ">
+        <div className="flex flex-col items-center  justify-center">
           <h1 className="text-xl mb-2">{emoji} {head}</h1>
           
 
