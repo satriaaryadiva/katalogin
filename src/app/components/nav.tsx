@@ -8,7 +8,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-indigo-600 shadow-md fixed top-0 left-0 right-0 z-50">
+    <nav className=" bg-blue-500 shadow-md fixed top-0 left-0 right-0 z-50">
       <div className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         <Link href="/" className="text-2xl font-bold text-yellow-400">
           Katalog <span className="text-white">in</span>
