@@ -18,7 +18,7 @@ const Hero = () => {
               objectFit="cover"
               objectPosition="center"
               height={350}
-              className="   bg-cover rounded-lg border-r-2 border-solid   shadow-2xl"
+              className="   rounded-lg     shadow-2xl"
             />
           </div>
           {/* Text Area */} 
@@ -29,7 +29,7 @@ const Hero = () => {
            </h1>
            
            
-            <button className="px-6 py-3 bg-indigo-600 text-white font-medium rounded-xl shadow hover:bg-indigo-700 transition duration-300">
+            <button className="px-6 py-3 bg-blue-400 text-white font-medium rounded-xl shadow hover:bg-indigo-700 transition duration-300">
               Mulai Sekarang
             </button>
           </div>

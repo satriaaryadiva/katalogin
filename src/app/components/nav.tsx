@@ -72,7 +72,7 @@ export default function Navbar() {
         <div className="hidden md:flex items-center space-x-4">
           <Link
             href="/login"
-            className="bg-[#f8452c] text-white px-4 py-2 rounded-md hover:bg-yellow-300 transition"
+            className="bg-blue-400 text-white px-4 py-2 rounded-md hover:bg-yellow-300 transition"
           >
             Tanyakan Sekarang
           </Link>

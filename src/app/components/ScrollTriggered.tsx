@@ -110,7 +110,7 @@ const card: React.CSSProperties = {
  */
 
 const features: [string, string, string, number, number][] = [
-  [" 🎨","Katalog Digital", "Mudah membuat, mengatur, dan membagikan katalog produk UMKM kamu.", 340, 10],
+  [" 🎨","", "Mudah membuat, mengatur, dan membagikan katalog produk UMKM kamu.", 340, 10],
   ["🎨","Katalog Digital", "Desain Profesional", 200, 230],
   ["🚀","Katalog Digital", "Bagikan Instan", 40, 70],
 ]
