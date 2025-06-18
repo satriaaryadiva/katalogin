@@ -5,7 +5,7 @@ import { CardProps } from "@/data"
 
 export default function ScrollTriggered() {
     return (
-        <div style={container}>
+        <div style={container} className="   md:flex md:flex-row w-full   justify-around  h-fit bg-red-500 items-center   ">
            {features.map(([emoji, head,title, hueA, hueB], i) => (
   <Card i={i} emoji={emoji} head={head} title={title} hueA={hueA} hueB={hueB} key={title} />
 ))}
@@ -22,14 +22,14 @@ function Card({ emoji, title,head, hueA, hueB, i }: CardProps) {
 
   return (
     <motion.div
-      className={`card-container-${i} `}
+      className={`card-container-${i} md:w-full   h-fit  flex flex-col items-center justify-center`}
       style={cardContainer}
       initial="offscreen"
       whileInView="onscreen"
       viewport={{ amount: 0.8 }}
     >
       <div style={{ ...splash, background }} />
-      <motion.div style={card} variants={cardVariants} className="card    border-20 border-solid border-indigo-600 ">
+      <motion.div style={card} variants={cardVariants} className="card     border-10 border-solid border-indigo-600 ">
         <div className="flex flex-col items-center  justify-center">
           <h1 className="text-xl mb-2">{emoji} {head}</h1>
           
@@ -64,9 +64,11 @@ const hue = (h: number) => `hsl(${h}, 100%, 50%)`
  */
 
 const container: React.CSSProperties = {
-    margin: "100px auto",
-    maxWidth: 500,
-    paddingBottom: 100,
+    margin: "  auto",
+   
+    background: "black",
+   
+    paddingBottom: 200,
     width: "100%",
 }
 
@@ -97,7 +99,7 @@ const card: React.CSSProperties = {
     justifyContent: "center",
     alignItems: "center",
     borderRadius: 20,
-    background: "#f5f5f5",
+    background: "black",
     boxShadow:
         "0 0 1px hsl(0deg 0% 0% / 0.075), 0 0 2px hsl(0deg 0% 0% / 0.075), 0 0 4px hsl(0deg 0% 0% / 0.075), 0 0 8px hsl(0deg 0% 0% / 0.075), 0 0 16px hsl(0deg 0% 0% / 0.075)",
     transformOrigin: "10% 60%",
@@ -109,6 +111,6 @@ const card: React.CSSProperties = {
 
 const features: [string, string, string, number, number][] = [
   [" 🎨","Katalog Digital", "Mudah membuat, mengatur, dan membagikan katalog produk UMKM kamu.", 340, 10],
-  ["🎨","cob2", "Desain Profesional", 200, 230],
-  ["🚀","cob23", "Bagikan Instan", 40, 70],
+  ["🎨","Katalog Digital", "Desain Profesional", 200, 230],
+  ["🚀","Katalog Digital", "Bagikan Instan", 40, 70],
 ]

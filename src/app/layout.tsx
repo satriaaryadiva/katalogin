@@ -25,7 +25,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased items-center justify-items-center min-h-screen  font-[var(--font-geist-sans)]`}
+        style={{
+          backgroundColor: "#f8f9fa", // Light gray background
+          color: "#212529", // Dark text color
+        }}
       >
         {children}
       </body>
