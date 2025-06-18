@@ -1,6 +1,7 @@
 import React from "react"
 import Image from "next/image"
 import ScrollTriggered from "./ScrollTriggered"
+import { ContainerTextFlip } from "@/components/ui/container-text-flip"
 
 const Hero = () => {
   return (
@@ -21,15 +22,13 @@ const Hero = () => {
             />
           </div>
           {/* Text Area */} 
-          <div className="w-full md:pl-8  items-center flex justify-center flex-col    text-center h-full  md:w-2/3    md:text-left space-y-6">
-            <h1 className="text-2xl/relaxed   text-blue-500 sm:text-3xl md:text-6xl font-bold  leading-tight">
-              Digitalisasi UMKM Lebih Mudah dengan Katalogin
-            </h1>
-            <p className="text-sm/relaxed sm:text-base md:text-lg text-white ">
-              Buat katalog anda dan tingkatkan penjualan serta jangkau pelanggan
-              lebih luas dengan platform yang dirancang untuk pelaku UMKM.
-              Dengan desain responsif dan mudah digunakan. 
-            </p>
+          <div className="w-full h-full md:pl-8 relative   items-center flex justify-center flex-col    text-center    md:w-2/3 py-10 md:mt-[-110px]  md:text-left space-y-6">
+            <ContainerTextFlip/>
+            <h1 className="text-2xl/relaxed   text-white sm:text-3xl md:text-6xl font-bold  leading-tight">
+              Digitalisasi Bisnis anda Lebih Mudah dengan  <span className="text-yellow-500  ">katalog</span> <span className="text-blue-500 ">in</span> 
+           </h1>
+           
+           
             <button className="px-6 py-3 bg-indigo-600 text-white font-medium rounded-xl shadow hover:bg-indigo-700 transition duration-300">
               Mulai Sekarang
             </button>
